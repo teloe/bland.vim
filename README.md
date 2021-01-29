@@ -12,7 +12,7 @@ A dark color scheme for vim/ neovim.<br/>
 ![html](https://user-images.githubusercontent.com/26290165/106217271-c1840280-6189-11eb-9806-fc0897f174f6.jpg)
 
 ### CSS
-![css](https://user-images.githubusercontent.com/26290165/106217392-fc863600-6189-11eb-98c2-d7a0192f5997.jpg)
+![css](https://user-images.githubusercontent.com/26290165/106312341-53881b80-621b-11eb-8e7a-1d03a4543860.jpg)
 
 ## Installation
 Use your favorite plugin manager. For example, [vim-plug](https://github.com/junegunn/vim-plug).

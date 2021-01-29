@@ -1,6 +1,6 @@
 # bland.vim
 
-A dark color scheme for vim/ neovim.<br/>
+Dark color scheme for vim/ neovim.<br/>
 *Built using [Colortemplate](https://github.com/lifepillar/vim-colortemplate), a toolkit for vim color scheme designers.*
 
 ## Screenshots
@@ -19,7 +19,7 @@ Use your favorite plugin manager. For example, [vim-plug](https://github.com/jun
 ```
 Plug 'teloe/bland.vim'
 ```
-Or, alternatively, you can install by copying the relevant directories right into `~/.vim`:
+Or, alternatively, you can install by copying the relevant files right into `~/.vim`:
 ```
 $ git clone https://github.com/teloe/bland.vim.git
 $ cp bland.vim/colors/bland.vim ~/.vim

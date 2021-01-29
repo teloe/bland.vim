@@ -1,0 +1,182 @@
+; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2
+
+; Information {{{
+; Mandatory
+Full name:     Bland
+Short name:    bland
+Author:        Tom Eloe <tomeloe@gmail.com>
+; Optional
+Maintainer:    Tom Eloe
+Website:       https://teloe.me
+Description:   Dark colorscheme for vim/ neovim
+License:       Public domain
+; Prefix for options: short name is used if this key is not present:
+Option Prefix: dark
+Neovim: yes
+; }}}
+
+; Documentation {{{
+Include: _help.colortemplate
+; }}}
+
+; Common linked groups {{{
+Boolean           -> Constant
+Character         -> Constant
+Conditional       -> Statement
+Debug             -> Special
+Define            -> PreProc
+Delimiter         -> Special
+Exception         -> Statement
+Float             -> Constant
+Function          -> Identifier
+Include           -> PreProc
+Keyword           -> Statement
+Label             -> Statement
+Macro             -> PreProc
+Number            -> Constant
+Operator          -> Statement
+PopupSelected     -> PmenuSel
+PreCondit         -> PreProc
+QuickFixLine      -> Search
+Repeat            -> Statement
+SpecialChar       -> Special
+SpecialComment    -> Special
+StatusLineTerm    -> StatusLine
+StatusLineTermNC  -> StatusLineNC
+StorageClass      -> Type
+String            -> Constant
+Structure         -> Type
+Tag               -> Special
+Typedef           -> Type
+; See `:help lCursor`
+lCursor           -> Cursor
+; }}}
+
+Background: dark
+
+; Color palette {{{
+; Color name         GUI                     Base256     Base16 (optional)
+Color: black         #1e232a                   234       DarkBlue
+Color: white         #cccccc                   ~         White
+Color: gray0         #262626                   ~         Black
+Color: gray1         #444444                   ~         Black
+Color: gray2         #666666                   ~         Black
+Color: gray3         #888888                   ~         Black
+Color: gray4         #999999                   ~         Black
+Color: gray5         #373b41                   ~         Black
+Color: brown         #8a7f71                   102       Black
+Color: green         #407367                   ~         DarkGreen
+Color: brightgreen   #DEFE52                   ~         Green
+Color: purple        #875f87                   ~         Magenta
+Color: red           rgb(255,   0,   0)        ~         DarkRed
+; Color: yellow        rgb(255, 255,   0)        ~         DarkYellow
+Color: yellow        #ebcb8b                   ~         DarkYellow
+Color: blue          rgb(  0,   0, 255)        ~         DarkBlue
+Color: magenta       rgb(255,   0, 255)        ~         DarkMagenta
+; Color: cyan          rgb(  0, 255, 255)        ~         DarkCyan
+Color: cyan          #96b5b4                   ~         DarkCyan
+Color: brightblack   rgb(210, 210, 210)        ~         DarkGrey
+Color: brightred     rgb(255, 100,   0)        ~         LightRed
+Color: brightyellow  rgb(255, 255, 100)        ~         LightYellow
+Color: brightblue    rgb(  0, 100, 255)        ~         LightBlue
+Color: brightmagenta rgb(255, 100, 255)        ~         LightMagenta
+Color: brightcyan    rgb(100, 255, 255)        ~         LightCyan
+; You may use hexadecimal values, too, and you may provide an explicit base-256 color:
+Color: brightwhite   #e0e0ed                  231        White
+; }}}
+; Terminal colors {{{
+Term colors: black red green yellow blue magenta cyan white
+Term colors: brightblack brightred brightgreen brightyellow
+Term colors: brightblue brightmagenta brightcyan brightwhite
+; }}}
+
+; Default highlight groups {{{
+Variant: gui
+#if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
+Variant: 256 8
+#if get(g:, '@optionprefix_transp_bg', 0)
+Variant: gui 256 8
+    Normal           white             none
+    Terminal         white             none
+#else
+    Normal           white             black
+    Terminal         white             black
+#endif
+
+; Group              Foreground        Background        Attributes
+ColorColumn          fg                black
+Conceal              none              none
+Cursor               white             black
+CursorColumn         white             black
+CursorLine           white             gray0
+CursorLineNr         white             black
+DiffAdd              white             gray0 
+DiffChange           white             gray0
+DiffDelete           white             gray0
+DiffText             white             gray0
+Directory            white             black
+EndOfBuffer          white             none
+ErrorMsg             red               none
+FoldColumn           green             gray0
+Folded               green             gray0
+IncSearch            gray0             brightgreen       g=standout
+LineNr               gray2             none
+MatchParen           white             gray5
+ModeMsg              white             black
+MoreMsg              white             black
+NonText              white             black
+Pmenu                white             gray0
+PmenuSbar            white             gray1
+PmenuSel             white             gray5
+PmenuThumb           white             black
+Question             white             black
+Search               gray0             brightgreen
+SignColumn           white             gray0
+SpecialKey           white             black
+SpellBad             white             black             s=red
+SpellCap             white             black             s=blue
+SpellLocal           white             black             s=magenta
+SpellRare            white             black             s=cyan reverse
+StatusLine           white             black
+StatusLineNC         white             black
+TabLine              white             black
+TabLineFill          white             black
+TabLineSel           white             black
+Title                white             black
+VertSplit            white             black
+Visual               none              gray5
+VisualNOS            white             black
+WarningMsg           white             black
+WildMenu             white             black
+; Other conventional group names (see `:help group-name`)
+Comment              green             none
+Constant             brown             none
+Error                red               none
+Identifier           white             none
+Ignore               white             none
+PreProc              brightgreen       none
+Special              purple            none
+Statement            gray4             none
+Todo                 brightgreen       none
+Type                 white             none
+Underlined           white             none
+Number               purple            none
+; Function             white             none
+; See `:help CursorIM`
+CursorIM             none              fg
+; See `:help window-toolbar`
+ToolbarLine          none              black
+ToolbarButton        white             black             bold
+; }}}
+
+; Additional highlight groups {{{
+; html
+htmlTag              gray2             none
+; htmlTagName          gray2             none
+htmlEndTag           gray2             none
+; htmlSpecialTagName   gray2             none
+; }}}
+
+; B/W variant {{{
+Include: _bw.colortemplate
+; }}}

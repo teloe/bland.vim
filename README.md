@@ -1,6 +1,6 @@
 # bland.vim
 
-A dark color scheme for vim/ neovim. 
+A dark color scheme for vim/ neovim.<br/>
 *Built using [Colortemplate](https://github.com/lifepillar/vim-colortemplate), a toolkit for vim color scheme designers.*
 
 ## Screenshots

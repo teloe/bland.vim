@@ -56,7 +56,8 @@ Background: dark
 
 ; Color palette {{{
 ; Color name         GUI                     Base256     Base16 (optional)
-Color: black         #1e232a                   234       DarkBlue
+; Color: black         #1e232a                   234       DarkBlue
+Color: black         #202021                   234       DarkBlue
 Color: white         #cccccc                   ~         White
 Color: gray0         #262626                   ~         Black
 Color: gray1         #444444                   ~         Black
@@ -67,11 +68,16 @@ Color: gray5         #373b41                   ~         Black
 Color: brown         #8a7f71                   102       Black
 Color: green         #407367                   ~         DarkGreen
 Color: brightgreen   #DEFE52                   ~         Green
+; Color: brightgreen   #7e8aa2                   ~         Green
 Color: purple        #875f87                   ~         Magenta
 Color: red           rgb(255,   0,   0)        ~         DarkRed
 ; Color: yellow        rgb(255, 255,   0)        ~         DarkYellow
 Color: yellow        #ebcb8b                   ~         DarkYellow
-Color: blue          rgb(  0,   0, 255)        ~         DarkBlue
+; Color: blue          rgb(  0,   0, 255)        ~         DarkBlue
+Color: blue          #7e8aa2                   ~         DarkBlue
+; Color: darkblue      #505c6a                   ~         DarkBlue
+Color: darkblue      #667688                   ~         DarkBlue
+; Color: blue          #8fa1b3                   ~         DarkBlue
 Color: magenta       rgb(255,   0, 255)        ~         DarkMagenta
 ; Color: cyan          rgb(  0, 255, 255)        ~         DarkCyan
 Color: cyan          #96b5b4                   ~         DarkCyan
@@ -110,7 +116,7 @@ Cursor               white             black
 CursorColumn         white             black
 CursorLine           white             gray0
 CursorLineNr         white             black
-DiffAdd              white             gray0 
+DiffAdd              darkblue          gray0 
 DiffChange           white             gray0
 DiffDelete           white             gray0
 DiffText             white             gray0
@@ -150,18 +156,19 @@ WarningMsg           white             black
 WildMenu             white             black
 ; Other conventional group names (see `:help group-name`)
 Comment              green             none
-Constant             brown             none
+; Comment              darkblue          none
+Constant             darkblue          none
 Error                red               none
 Identifier           white             none
 Ignore               white             none
-PreProc              brightgreen       none
+PreProc              darkblue          none
 Special              purple            none
-Statement            gray4             none
+Statement            gray3             none
 Todo                 brightgreen       none
 Type                 white             none
 Underlined           white             none
 Number               purple            none
-; Function             white             none
+Function             gray2             none
 ; See `:help CursorIM`
 CursorIM             none              fg
 ; See `:help window-toolbar`

@@ -6,13 +6,13 @@ Dark color scheme for vim/ neovim.<br/>
 ## Screenshots
 
 ### JavaScript
-![js](https://user-images.githubusercontent.com/26290165/106217156-7d90fd80-6189-11eb-80be-4a761006e9d3.jpg)
+![js](https://user-images.githubusercontent.com/26290165/108294562-ed702380-714a-11eb-96f7-ed499699a956.jpg)
 
 ### HTML
-![html](https://user-images.githubusercontent.com/26290165/106217271-c1840280-6189-11eb-9806-fc0897f174f6.jpg)
+![html](https://user-images.githubusercontent.com/26290165/108294494-db8e8080-714a-11eb-91bc-637d940aa84b.jpg)
 
 ### CSS
-![css](https://user-images.githubusercontent.com/26290165/106312341-53881b80-621b-11eb-8e7a-1d03a4543860.jpg)
+![css](https://user-images.githubusercontent.com/26290165/108294377-a5510100-714a-11eb-8e22-45a01dc2c434.jpg)
 
 ## Installation
 Use your favorite plugin manager. For example, [vim-plug](https://github.com/junegunn/vim-plug).
